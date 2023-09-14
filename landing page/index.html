@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OURSCOMPANY</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+            background-color: black;
+            color: white;
+        }
+
+        .marquee {
+            margin: 4px 4px;
+            background-color: aqua;
+            border-radius: 12px;
+            height: 48px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 99%;
+            padding-top: 10px;
+        }
+
+        .marquee h2 {
+            color: rgb(197, 40, 40);
+        }
+
+
+        #nav {
+            background-color: #a0e3d7;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 9px 4px;
+            border-radius: 9px;
+            height: 64px;
+            width: 99%;
+        }
+
+        #nav li {
+            padding-top: 17px;
+            padding-left: 85px;
+            list-style: none;
+            font-size: 20px;
+
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        #logodiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #logodiv img {
+            height: 32px;
+            border-radius: 36px;
+            padding-top: 0px;
+
+            margin-top: -9px;
+
+        }
+
+        #section {
+            width: 100%;
+            border: 2px solid red;
+            background: url("images/logo.png");
+            background-position: center;
+        }
+
+        #home {
+
+            background-repeat: repeat;
+            width: 109%;
+            border-radius: 12px;
+            height: 500px;
+            background-repeat: no-repeat;
+            margin: 4px 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-bottom: 120px;
+            color: #212124ed;
+
+        }
+
+        #home h1 {
+            position: relative;
+            bottom: 69px;
+            text-align: center;
+            font-size: 42px;
+            opacity: 12px;
+        }
+
+        #home p {
+            position: relative;
+            top: -48px;
+            font-size: 15px;
+        }
+
+        #service {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        #services-div {
+            border: 2px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height:auto;
+            width: 100%;
+        }
+
+        .boxes {
+            color: white;
+            margin: 20px 30px;
+            border: 2px solid red;
+            padding: 10px;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow:scroll;
+        }
+
+        .boxes img {
+            width: 125px;
+            height: 120px;
+
+            margin: auto;
+            margin-bottom: 10PX;
+        }
+
+        #box-3 img {
+            border-radius: 228px;
+        }
+
+        #las {
+            text-align: center;
+            margin: 10px;
+        }
+
+        #contact-us {
+            border: 2px solid red;
+            width: 100%;
+            height: 500px;
+
+        }
+
+        .form {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .form input {
+            width: 343px;
+            height: 40px;
+            margin: 10px 10px;
+            border-top-right-radius: 13px;
+        }
+
+        .form textarea {
+            width: 343px;
+            height: 140px;
+            margin: 10px 10px;
+
+        }
+
+        .form button {
+            width: 136px;
+            height: 27px;
+            align-self: center;
+
+        }
+
+        @media only screen and (max-width:1240px) and (min-width:900px) {
+            #nav li {
+                padding: 15px;
+            }
+        }
+
+        @media only screen and (max-width:900px) and (min-width:820px) {
+            #nav li {
+                padding: 8px;
+        
+            }
+            
+        }
+        @media only screen and (max-width:796px) and (min-width:600px)
+        {
+            #services-div{
+                flex-direction: column;
+                flex-wrap: wrap;
+                border:none;
+                width:100vw;
+            }
+            .boxes{
+                margin:auto;
+                padding: 5px;
+                margin-bottom: 10px;
+                width:400px;
+                border:none;
+
+            }
+            #box-1{
+                margin-top: 10px;
+            }
+        }
+        @media only screen and (max-width:820px) and (min-width:200px)  {
+            #nav li {
+                padding: 5px;
+                margin-top: 10px;
+
+        
+            }
+            #text{
+                display: none;
+            }
+        }
+        @media only screen and (max-width:584px)  {
+            #nav li {
+                padding: 2px;
+                margin-top: 10px;
+        
+            }
+            #text{
+                display: none;
+            }
+        }
+        @media only screen and (max-width:546px)
+        {
+            #logodiv{
+                display: none;
+            }
+            #nav li{
+                padding:5px;
+            }
+
+
+        }
+        @media (min-width:500px) and (max-width:600px)
+        {
+            #phonescreen{
+                display:none;
+                position:relative;
+                content:"USED LAPTOP OR TAB";
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="phonescreen">
+    <!-- marquee section  -->
+    <div class="marquee">
+        <marquee direction="RIGHT">
+            <h2>
+                WELCOME TO MY SOCIAL MEDIA AGENCY
+            </h2>
+
+        </marquee>
+    </div>
+    <!-- navbar section  -->
+    <navbar class="navbar">
+        <div id="navbar-1">
+
+            <ul id="nav">
+                <li id="logodiv"><img src="images/logo.png" alt="OURSCOMPANY">
+                    ourscompany</li>
+                <li><a href="#navbar-1">HOME</a></li>
+                <li><a href="#services-div">SERVICES</a></li>
+                <li><a href="index.html">OUR CLIENTS</a></li>
+                <li><a href="#contact-us">CONTACT US</a></li>
+                <li id="text"> BECOME A PARTNER</li>
+            </ul>
+
+        </div>
+    </navbar>
+    <!-- home section -->
+    <section id="section">
+        <div id="home">
+            <h1 class="h-primary">
+                GROW YOUR BUSINESS ONLINE
+            </h1>
+            <p class="paragraph">
+                BECOME BEST BUSINESSMAN GROW YOUR BUSINESS THROUGH FACEBOOK AND YOUTUBE ADS
+            </p>
+            <p class="paragraph">
+                JOIN OUR COMMUNITY AND BECOME SUCCESSFUL BUSINESSMAN
+
+            </p>
+
+        </div>
+
+    </section>
+    <!-- our services heading -->
+    <h1 id="service">
+        OUR SERVICES
+    </h1>
+    <!-- services whole -->
+    <div id="services-div">
+        <div class="boxes" id="box-1">
+            <div class="box-img">
+                <img src="images/face1.png" alt="facebook">
+            </div>
+            <p CLASS="PARA-DIV-BOX">
+                FACEBOOK MARKETING IS CONSIDERED ONE OF THE BEST MARKETTING FOR SELLING GOODS AND THINGS
+            </p>
+            <P CLASS="PARA-DIV-BOX">
+                MANY PROFESSIONAL USED FACEBOOK FOR THEIR MARKETTING.ACCORDING TO RECENT REPORT FACEBOOK
+                IS MOST USEFUL FOR PERFORMANCE SOCIAL MARKETTING.IF YOU WANT THAT YOUR BUSINESS BECOME MORE
+                PROFESSIONAL THAN USED FACEBOOK FOR YOUR MARKETING
+                NOW A DAYS WORLD IS BECOMING COMPLETELY PROFESSIONAL SO BECOME PROFESSIONAL BUSINESSMAN AND
+                BUSINESS WORLD WIDE
+                THANKS FOR CHOICING US
+
+            </P>
+
+        </div>
+        <div class="boxes" id="box-2">
+            <div class="box-img">
+                <img src="images/youtubad.png" alt="youtube">
+            </div>
+            <p CLASS="PARA-DIV-BOX">
+                YOUTUBE MARKETING IS CONSIDERED ONE OF THE BEST MARKETTING FOR SELLING GOODS AND THINGS
+            </p>
+            <P CLASS="PARA-DIV-BOX">
+                MANY PROFESSIONAL USED YOUTUBE ADS FOR THEIR MARKETTING.ACCORDING TO RECENT REPORT YOUTUBE ADSENCE
+                IS MOST USEFUL FOR PERFORMANCE SOCIAL MARKETTING.IF YOU WANT THAT YOUR BUSINESS BECOME MORE
+                PROFESSIONAL THAN USED YOUTUBE ADS OR YOUR MARKETING
+                NOW A DAYS WORLD IS BECOMING COMPLETELY PROFESSIONAL SO BECOME PROFESSIONAL BUSINESSMAN AND
+                BUSINESS WORLD WIDE
+                THANKS FOR CHOICING US
+
+            </P>
+
+        </div>
+        <div class="boxes" id="box-3">
+            <div class="box-img">
+                <img src="images/allinone.png" alt="all seo">
+            </div>
+            <p CLASS="PARA-DIV-BOX">
+                SEO YOUTUBE IS CONSIDERED ONE OF THE BEST MARKETTING FOR SELLING GOODS AND THINGS
+            </p>
+            <P CLASS="PARA-DIV-BOX">
+                MANY PROFESSIONAL USED YOUTUBE ADS FOR THEIR MARKETTING.ACCORDING TO RECENT REPORT YOUTUBE ADSENCE
+                IS MOST USEFUL FOR PERFORMANCE SOCIAL MARKETTING.IF YOU WANT THAT YOUR BUSINESS BECOME MORE
+                PROFESSIONAL THAN USED YOUTUBE ADS OR YOUR MARKETING
+                NOW A DAYS WORLD IS BECOMING COMPLETELY PROFESSIONAL SO BECOME PROFESSIONAL BUSINESSMAN AND
+                BUSINESS WORLD WIDE
+                THANKS FOR CHOICING US
+
+            </P>
+
+        </div>
+    </div>
+    <br />
+    <!-- contact us section  -->
+    <h1 id="las">
+        CONTACT US
+    </h1>
+    <section id="contact-us">
+        <div class="form">
+            <input type="text" name="text" placeholder="ENTER YOUR NAME" id="" required/>
+            <input type="email" name="email" placeholder="ENTER YOUR EMAIL" id=""  required/>
+            <input type="text" name="text" placeholder="ENTER YOUR BUSINESS" id="" required/>
+            <input type="text" name="text" placeholder="ENTER YOUR PRODUCT" id="" required/>
+            <input type="text" name="text" placeholder="ENTER YOUR TOTAL " id="" required/>
+            <textarea name="text" id="" cols="10" rows="10" placeholder="EXPLAIN BRIEFLY YOUR BUSINESS"></textarea>
+
+            <button type="reset">
+                SUBMIT
+            </button>
+
+
+        </div>
+
+    </section>
+    <footer STYLE="text-align: center; margin:25px;">
+        &copy;; MAKED BY SHAHZEB SHAIKH
+    </footer>
+
+</div>
+</body>
+
+</html>
